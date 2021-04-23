@@ -6,6 +6,7 @@ import DashboardPage from './pages/DashboardPage';
 import {Auth0Provider} from "@auth0/auth0-react";
 
 import App from './App';
+import Profile from "./components/auth/Profile";
 
 ReactDOM.render(
     <Auth0Provider
@@ -21,6 +22,7 @@ ReactDOM.render(
             <App>
                 <Route key="index" exact path="/" component={DashboardPage}/>
                 <Route key="explore" path="/explore" component={ExplorePage}/>
+                <Route key="profile" path="/profile" component={Profile}/>
             </App>
         </Router>
     </Auth0Provider>,
